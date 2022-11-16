@@ -2,21 +2,22 @@
 
 from pynput.mouse import Button, Controller as mouse_controller
 from pynput.keyboard import Key, Controller as keyboard_controller
+import random
 import time
 
 mouse = mouse_controller()
 keyboard = keyboard_controller()
 
 positions = [
-    (794, 291),
-    (743, 292),
-    (749, 336),
-    (742, 384),
-    (792, 392),
-    (856, 387),
-    (857, 334),
-    (859, 276),
-    (803, 329)
+    (3179, 488),
+    (3299, 502),
+    (3287, 605),
+    (3296, 684),
+    (3186, 704),
+    (3081, 693),
+    (3082, 583),
+    (3082, 475),
+    (3195, 588)
 ]
 
 def pick_loot_around():
@@ -24,12 +25,12 @@ def pick_loot_around():
 
     for i in positions:
         mouse.position = i
-        time.sleep(0.01)
+        time.sleep(random.randint(11, 22) / 1000.0)
 
         with keyboard.pressed(Key.shift):
             mouse.press(Button.right)
             mouse.release(Button.right)
-            time.sleep(0.01)
+            time.sleep(random.randint(11, 22) / 1000.0)
         
     mouse.position = original_position
 
