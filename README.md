@@ -22,10 +22,10 @@ To get the mouse positions, run the script [get_mouse_position.py](https://githu
 
  All done, then just make the script an executable file with
 
-> chmod +x autoloot.py 
+> chmod +x auto_loot.py 
 
 and use the 'Keyboard > Apps Shorcuts' to create a command shortcut. The command will be like
 
-> /bin/bash -c "/path/to/file/autoloot.py" 
+> /bin/bash -c "/path/to/file/auto_loot.py" 
 
 and make the shortcut of your choice.
