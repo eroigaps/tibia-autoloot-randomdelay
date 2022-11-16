@@ -1,6 +1,8 @@
 # Tibia Autoloot - Python 3.7.x
 Simple script for autoloot around the character with only one click and super fast! 
 
+---- fork modified to shift+rightclick with random delay between 110-220 ms ----
+
 _Disclaim:
 All my scripts are made linux based. Im using Xubuntu 18.4, but probably they will work with Windows too. If you need some help, please contact me sending an issue. And hey, I encourage code improvements too, feel free to send me a pull request anytime!_
 
